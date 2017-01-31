@@ -14,7 +14,6 @@ extension UIViewController {
     //Extensions & Additional features
     
     // dismiss keyboard
-    
     func dismissKeyboard() {
         view.endEditing(true)
     }

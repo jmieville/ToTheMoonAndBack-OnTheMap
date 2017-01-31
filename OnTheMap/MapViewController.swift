@@ -12,17 +12,14 @@ import MapKit
 class MapViewController: UIViewController, MKMapViewDelegate {
 
     //Outlets
-    
     @IBOutlet weak var mapView: MKMapView!
     
     //Variables/Constants
-    
     let reuseId = "pin"
     var selectedView: MKAnnotationView?
     var tapGesture: UITapGestureRecognizer!
     
     //Lifecycle methods
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
@@ -43,7 +40,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
 
     //Private methods
-    
     // Get the student info
     func studentOnMapInformation() {
         let students = StudentLocationModel.student
@@ -113,7 +109,5 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             }
         }
     }
-    //Delegate methods
-    //Extensions
 }
 

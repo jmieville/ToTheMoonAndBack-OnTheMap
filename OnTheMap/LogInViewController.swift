@@ -16,9 +16,9 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var logInText: UILabel!
     @IBOutlet weak var logInBtnText: UIButton!
     @IBOutlet weak var blurEffect: UIVisualEffectView!
+    
     //Actions
     // Log in: if correct username -> present TabBarController else show error message
-    
     @IBAction func logInAction(_ sender: Any) {
         // dismiss the keyboard
         dismissKeyboard()
@@ -60,12 +60,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    //Variables/Constants
-    
-    //Lifecycle methods
-    
-   
-    
+    //Lifecycle method
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -91,7 +86,6 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     
     // extension
     // move frame on y axis for keyboard
-    
     func getKeyboardHeight(_ notification:Notification) -> CGFloat {
         let userInfo = notification.userInfo
         let keyboardSize = userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue // of CGRect

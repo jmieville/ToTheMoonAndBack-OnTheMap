@@ -11,17 +11,14 @@ import UIKit
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //Outlets
-    
     @IBOutlet var tableView: UITableView!
     
     //Variables/Constants
-    
     let reusableCell = "cell"
     var TableData:Array< Any > = Array < Any >()
     var parseAPI = ParseAPI()
 
     //Lifecycle methods
-    
     func doTableRefresh(callback: (Result) -> Void) {
             tableView.reloadData()
     }
@@ -48,7 +45,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return StudentLocationModel.student.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // Dequeue cell

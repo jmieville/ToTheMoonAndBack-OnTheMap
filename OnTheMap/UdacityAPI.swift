@@ -84,17 +84,13 @@ struct UdacityAPI {
             }
         }
         task.resume()
-        
     }
     
     // log out
-    
     static func logOut(callback: @escaping (Result) -> Void) -> Void {
-        
         guard let sessionUrl = NSURL(string: "https://www.udacity.com/api/session") else {
           return
         }
-        
         let request = NSMutableURLRequest(url: sessionUrl as URL)
         request.httpMethod = "DELETE"
         var xsrfCookie: HTTPCookie? = nil

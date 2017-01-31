@@ -23,10 +23,7 @@ class TabBarController: UITabBarController {
     @IBAction func doPost(_ sender: Any) {
     }
 
-    //Variables/Constants
-    
     //Lifecycle methods
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,7 +44,6 @@ class TabBarController: UITabBarController {
     }
     
     //Private methods
-    
     func logOut() {
         print("You just logged out")
         UdacityAPI.logOut(callback: { (result) -> Void in

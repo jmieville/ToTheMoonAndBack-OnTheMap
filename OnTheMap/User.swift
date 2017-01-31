@@ -11,7 +11,6 @@ import Foundation
 class User {
 
     //Empty initialisation to facilitate code in other file
-    
     // User info
     static var firstName: String = ""
     static var lastName: String = ""
@@ -24,5 +23,4 @@ class User {
     
     // User shared url info
     static var mediaURL: String = ""
-    
 }

@@ -12,7 +12,6 @@ import Foundation
 struct StudentModel {
     
     // Model structed from StudentLocationModel
-    
     var objectIdKey: String
     var uniqueKey: String
     var firstNameKey: String
@@ -23,8 +22,6 @@ struct StudentModel {
     var longitudeKey: Double
     var createdAtKey: String
     var updatedAtKey: String
-    // ACL not needed
-    //var ACLKey: String
     
     // Initializing properties for StudentModel usage
     init?(student: [String:Any]) {
@@ -41,5 +38,4 @@ struct StudentModel {
         createdAtKey = student[StudentLocationModel.createdAtKey] != nil ? student[StudentLocationModel.createdAtKey] as! String: ""
         updatedAtKey = student[StudentLocationModel.updatedAtKey] != nil ? student[StudentLocationModel.updatedAtKey] as! String: ""
     }
-    
 }

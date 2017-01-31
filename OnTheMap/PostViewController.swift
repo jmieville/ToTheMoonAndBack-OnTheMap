@@ -29,7 +29,6 @@ class PostViewController: UIViewController, UITextFieldDelegate, MKMapViewDelega
     @IBOutlet weak var mapViewForLocation: MKMapView!
     
     // Btn Outlet
-    
     @IBOutlet weak var submitBtnOutlet: UIButton!
     
     
@@ -64,7 +63,6 @@ class PostViewController: UIViewController, UITextFieldDelegate, MKMapViewDelega
         User.latitude = (self.coordinate?.location?.coordinate.latitude)!
         User.longitude = (self.coordinate?.location?.coordinate.longitude)!
         User.mediaURL = self.urlTextField.text!
-
         self.textLabelForUrl.text = "Loading"
         dismissKeyboard()
         
@@ -87,9 +85,7 @@ class PostViewController: UIViewController, UITextFieldDelegate, MKMapViewDelega
         }
     }
     
-    
     //Variables/Constants
-    
     let identifier = "pin"
     var location: CLLocation?
     var mapString: String = ""
@@ -97,7 +93,6 @@ class PostViewController: UIViewController, UITextFieldDelegate, MKMapViewDelega
 
     
     //Lifecycle methods
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         locationTextField.delegate = self
@@ -107,9 +102,7 @@ class PostViewController: UIViewController, UITextFieldDelegate, MKMapViewDelega
     }
     
     //Private methods
-    
     // Show map
-    
     func showMap() {
         guard let myPosition = self.coordinate else {
             return
@@ -189,5 +182,4 @@ class PostViewController: UIViewController, UITextFieldDelegate, MKMapViewDelega
         }
         return pinView
     }
-    
 }

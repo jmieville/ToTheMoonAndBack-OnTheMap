@@ -11,11 +11,7 @@ import UIKit
 class TableViewCell: UITableViewCell {
     
     // Outlets
-
     @IBOutlet weak var myImageCell: UIImageView!
     @IBOutlet weak var myCellLabel: UILabel!
     @IBOutlet weak var mediaLinkCell: UILabel!
-    
-    
-    
 }
